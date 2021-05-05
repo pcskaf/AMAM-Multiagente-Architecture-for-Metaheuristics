@@ -9,7 +9,7 @@ import Factorys.SolutionFactory;
  * 
  * Copyright (C) 2013-2018 Silva, M.A.L.
  * Function: Multi-objective problem element.  
- * @author Maria Amélia Lopes Silva <mamelia@ufv.br>
+ * @author Maria  Lopes Silva <mamelia@ufv.br>
  **/
 
 public class Population extends CollectionSolutions{
@@ -163,9 +163,9 @@ public class Population extends CollectionSolutions{
 		double b[] = new double[p.getDimension()];
 		Population pareto = new Population(this.getSize(), this.getMaxSize(), receiver_size, p);
 		
-		//compara um ponto com todos os outros - verificando dominância
+		//compara um ponto com todos os outros - verificando dominï¿½ncia
 		for(int i = 0; i < this.getSize(); i++) {
-			count = 1;                   //1 se o ponto é não dominado
+			count = 1;                   //1 se o ponto ï¿½ nï¿½o dominado
 			a = this.copyVectorOF(this.getSolutionInPopulation(i), p.getDimension());
 			for(int j = 0; j < this.getSize(); j++) {
 				if(i != j) {
@@ -177,14 +177,14 @@ public class Population extends CollectionSolutions{
 						result = this.dominanceRelationMax(b, a, p.getDimension());
 					}
 					if(result == 1) {
-						count = 0;       //se não é pareto cont recebe 0
+						count = 0;       //se nï¿½o ï¿½ pareto cont recebe 0
 					}
 				}
 			}
 			
-			//se um ponto não é dominado
+			//se um ponto nï¿½o ï¿½ dominado
 			if(count == 1) {
-				//É PONTO DO PARETO
+				//ï¿½ PONTO DO PARETO
 				pareto.getSolutionInPopulation(count_pareto).copyValuesSolution(this.getSolutionInPopulation(i), p);
 				count_pareto++;
 			}
@@ -205,9 +205,9 @@ public class Population extends CollectionSolutions{
 			pareto[i] = 0;
 		}
 		
-		//compara um ponto com todos os outros - verificando dominância
+		//compara um ponto com todos os outros - verificando dominï¿½ncia
 		for(int i = 0; i < this.getSize(); i++) {
-			count = 1;                   //1 se o ponto é não dominado
+			count = 1;                   //1 se o ponto ï¿½ nï¿½o dominado
 			a = this.copyVectorOF(this.getSolutionInPopulation(i), p.getDimension());
 			for(int j = 0; j < this.getSize(); j++) {
 				if(i != j) {
@@ -219,14 +219,14 @@ public class Population extends CollectionSolutions{
 						result = this.dominanceRelationMax(b, a, p.getDimension());
 					}
 					if(result == 1) {
-						count = 0;       //se não é pareto cont recebe 0
+						count = 0;       //se nï¿½o ï¿½ pareto cont recebe 0
 					}
 				}
 			}
 			
-			//se um ponto não é dominado
+			//se um ponto nï¿½o ï¿½ dominado
 			if(count == 1) {
-				//É PONTO DO PARETO
+				//ï¿½ PONTO DO PARETO
 				pareto[i] = 1;
 			}
 		}
@@ -322,7 +322,7 @@ public class Population extends CollectionSolutions{
 	public void showPopulation(Problem p) {
 		System.out.println("\n\n****** POPULATION ******");
 		for(int i = 0; i < this.getSize(); i++) {
-			System.out.println("\n\nIndivíduo " + i );
+			System.out.println("\n\nIndivï¿½duo " + i );
 			System.out.print("Rank: " + this.rank[i]);
 			this.getSolutionInPopulation(i).showSolution(p);
 		}
@@ -331,7 +331,7 @@ public class Population extends CollectionSolutions{
 	public void showFOPopulation(Problem p) {
 		System.out.println("\n\n****** POPULATION ******");
 		for(int i = 0; i < this.getSize(); i++) {
-			System.out.println("\n\nIndivíduo " + i );
+			System.out.println("\n\nIndivï¿½duo " + i );
 			for(int j = 0; j < p.getDimension(); j++) {
 				System.out.println("Objective Function " + j + ": " + this.getSolutionInPopulation(i).getObjectiveFunctionI(j));
 			}

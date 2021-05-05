@@ -10,7 +10,7 @@ import Genetic_Algorithm.Population;
  * 
  * Copyright (C) 2013-2018 Silva, M.A.L.
  * Function: class responsible for the creation (instantiation) of Populations. 
- * @author Maria Amélia Lopes Silva <mamelia@ufv.br>
+ * @author Maria  Lopes Silva <mamelia@ufv.br>
  **/
 
 public class PopulationFactory {
@@ -35,7 +35,7 @@ public class PopulationFactory {
 				break;
 				
 			default:
-				System.out.println("Tipo de solução não disponível!");
+				System.out.println("Tipo de soluï¿½ï¿½o nï¿½o disponï¿½vel!");
 		}
 		
 		return pop;

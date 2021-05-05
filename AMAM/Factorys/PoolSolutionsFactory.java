@@ -4,7 +4,7 @@ package Factorys;
  * 
  * Copyright (C) 2013-2018 Silva, M.A.L.
  * Function: class responsible for the creation (instantiation) of pool solutions
- * @author Maria Amélia Lopes Silva <mamelia@ufv.br>
+ * @author Maria  Lopes Silva <mamelia@ufv.br>
  **/
 
 import Cooperation.PMPoolSolutions;
@@ -28,7 +28,7 @@ public class PoolSolutionsFactory {
 				break;
 				
 			default:
-				System.out.println("Tipo de problema não disponível!");
+				System.out.println("Tipo de problema nï¿½o disponï¿½vel!");
 		}
 		
 		return pool;

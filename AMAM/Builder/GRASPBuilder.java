@@ -6,7 +6,7 @@ import GRASP.GreedyRandomizedAdaptiveSearchProcedure;
  * 
  * Copyright (C) 2013-2018 Silva, M.A.L.
  * Function: Builder class for GRASP Method. Implements Design Pattern Builder.  
- * @author Maria Amélia Lopes Silva <mamelia@ufv.br>
+ * @author Marialia Lopes Silva <mamelia@ufv.br>
  **/
 
 public abstract class GRASPBuilder extends MethodBuilder{

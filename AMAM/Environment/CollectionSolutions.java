@@ -4,7 +4,7 @@ package Environment;
  * Copyright (C) 2013-2018 Silva, M.A.L.
  * Function: Abstract class responsible for defining set of solutions. Used to define populations, 
  * pools, tabu lists, etc.  
- * @author Maria Amélia Lopes Silva <mamelia@ufv.br>
+ * @author Maria  Lopes Silva <mamelia@ufv.br>
  **/
 
 public abstract class CollectionSolutions {

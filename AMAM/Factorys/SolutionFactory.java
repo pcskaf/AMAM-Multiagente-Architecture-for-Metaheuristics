@@ -9,7 +9,7 @@ import Environment_VRP.VRPSolution;
  * 
  * Copyright (C) 2013-2018 Silva, M.A.L.
  * Function: class responsible for the creation (instantiation) of solution
- * @author Maria Amélia Lopes Silva <mamelia@ufv.br>
+ * @author Maria  Lopes Silva <mamelia@ufv.br>
  **/
 
 public class SolutionFactory {
@@ -28,7 +28,7 @@ public class SolutionFactory {
 				break;
 				
 			default:
-				System.out.println("Tipo de solução não disponível!");
+				System.out.println("Tipo de soluï¿½ï¿½o nï¿½o disponï¿½vel!");
 		}
 		
 		return s;

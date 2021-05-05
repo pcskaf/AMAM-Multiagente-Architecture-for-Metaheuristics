@@ -7,7 +7,7 @@ import Environment.Solution;
  * 
  * Copyright (C) 2013-2018 Silva, M.A.L.
  * Function: Abstract class that defines the Multi-Objective Fitness model for optimization problems.  
- * @author Maria Amélia Lopes Silva <mamelia@ufv.br>
+ * @author Maria  Lopes Silva <mamelia@ufv.br>
  **/
 
 public abstract class MultiObjectiveFitness {

@@ -17,7 +17,7 @@ import MultiagentSystem.Agent;
  * 
  * Copyright (C) 2013-2018 Silva, M.A.L.
  * Function: Solution pool class.
- * @author Maria Amélia Lopes Silva <mamelia@ufv.br>
+ * @author Maria  Lopes Silva <mamelia@ufv.br>
  **/
 
 public abstract class PoolSolutions extends CollectionSolutions {
@@ -254,13 +254,13 @@ public abstract class PoolSolutions extends CollectionSolutions {
 			//System.out.println("Distance ["+ i + "][" + j + "] :" + distance);
 			if(dist <= this.radius_niche)
 			{
-				//quanto mais próximo de 1, mais próximas são as soluções
+				//quanto mais prï¿½ximo de 1, mais prï¿½ximas sï¿½o as soluï¿½ï¿½es
 				this.distance[i] = 1 - (dist / this.radius_niche);
 				this.shi[i] = 1 - (dist / this.radius_niche);
 			}
 			else
 			{
-				//0 para soluções mais distantes (com base no raio do nicho)
+				//0 para soluï¿½ï¿½es mais distantes (com base no raio do nicho)
 				this.distance[i] = 0;
 				this.shi[i] = 0;
 			}

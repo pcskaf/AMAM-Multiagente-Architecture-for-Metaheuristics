@@ -14,7 +14,7 @@ import Environment_PRV_Movements.MovementVRPTwoSwapInter;
  * 
  * Copyright (C) 2013-2018 Silva, M.A.L.
  * Function: class responsible for the creation (instantiation) of momevement factorys. 
- * @author Maria Amélia Lopes Silva <mamelia@ufv.br>
+ * @author Maria  Lopes Silva <mamelia@ufv.br>
  **/
 
 public class MovementFactory {
@@ -49,7 +49,7 @@ public class MovementFactory {
 				m = new MovementVRPEliminatesRandomRoute(move_type);
 				break;
 			default:
-				System.out.println("Tipo de movimento não disponível!");
+				System.out.println("Tipo de movimento nï¿½o disponï¿½vel!");
 		}
 		
 		return m;

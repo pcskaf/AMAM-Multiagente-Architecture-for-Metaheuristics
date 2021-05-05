@@ -9,7 +9,7 @@ import Parameters.Parameters;
  * 
  * Copyright (C) 2013-2018 Silva, M.A.L.
  * Function: Abstract class that defines the model of the builder class for Design Pattern Builder.  
- * @author Maria Amélia Lopes Silva <mamelia@ufv.br>
+ * @author Maria  Lopes Silva <mamelia@ufv.br>
  **/
 
 public abstract class MethodBuilder {

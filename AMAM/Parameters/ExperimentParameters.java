@@ -6,7 +6,7 @@ import Function_Package.WriterInFile;
  * 
  * Copyright (C) 2013-2018 Silva, M.A.L.
  * Function: Experiments parameters.  
- * @author Maria Amélia Lopes Silva <mamelia@ufv.br>
+ * @author Maria  Lopes Silva <mamelia@ufv.br>
  **/
 
 public class ExperimentParameters {
@@ -17,7 +17,7 @@ public class ExperimentParameters {
 	private String problem_type[];
 	private int executions_number;
 	
-	//Melhor solução conhecida
+	//Melhor soluï¿½ï¿½o conhecida
 	private double best_of;
 	private int best_aux;
 	
@@ -37,7 +37,7 @@ public class ExperimentParameters {
 	
 	//Cooperation
 	private String cooperation_type;
-	private int receiver_size; 		//da solução
+	private int receiver_size; 		//da soluï¿½ï¿½o
 	private double radius_niche;
 	private int max_size_pool;
 		

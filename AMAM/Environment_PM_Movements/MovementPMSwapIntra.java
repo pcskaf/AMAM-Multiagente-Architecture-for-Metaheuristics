@@ -4,7 +4,7 @@ package Environment_PM_Movements;
  * 
  * Copyright (C) 2013-2018 Silva, M.A.L.
  * Function: Class that extends the Movement class.
- * @author Maria Amélia Lopes Silva <mamelia@ufv.br>
+ * @author Maria  Lopes Silva <mamelia@ufv.br>
  **/
 
 import Environment.Element;

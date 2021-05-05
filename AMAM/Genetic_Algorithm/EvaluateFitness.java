@@ -6,7 +6,7 @@ import Environment.Problem;
  * 
  * Copyright (C) 2013-2018 Silva, M.A.L.
  * Function: One of the elements of a Genetic Algorithm. Used by Design Pattern Builder.  
- * @author Maria Amélia Lopes Silva <mamelia@ufv.br>
+ * @author Maria  Lopes Silva <mamelia@ufv.br>
  **/
 
 public interface EvaluateFitness {

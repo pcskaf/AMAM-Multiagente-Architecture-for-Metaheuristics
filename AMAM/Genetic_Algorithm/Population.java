@@ -7,7 +7,7 @@ import Environment.Solution;
  * 
  * Copyright (C) 2013-2018 Silva, M.A.L.
  * Function: Elements used for Genetic Algorithm.  
- * @author Maria Amélia Lopes Silva <mamelia@ufv.br>
+ * @author Maria  Lopes Silva <mamelia@ufv.br>
  **/
 
 public class Population {

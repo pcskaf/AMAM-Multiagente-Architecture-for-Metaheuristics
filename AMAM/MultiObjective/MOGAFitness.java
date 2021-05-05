@@ -7,7 +7,7 @@ import Environment.Solution;
  * 
  * Copyright (C) 2013-2018 Silva, M.A.L.
  * Function: Class that extends MultiObjectiveFitness Class.  
- * @author Maria Amélia Lopes Silva <mamelia@ufv.br>
+ * @author Maria  Lopes Silva <mamelia@ufv.br>
  **/
 
 public class MOGAFitness extends MultiObjectiveFitness{
@@ -20,17 +20,17 @@ public class MOGAFitness extends MultiObjectiveFitness{
 	
 	/* ---- MOGA ---- */
 	
-	//alpha - define se escalonamento é linear (alpha = 1) ou não (alpha > 1) 
+	//alpha - define se escalonamento ï¿½ linear (alpha = 1) ou nï¿½o (alpha > 1) 
 	public void evaluateFitnessMOGA(Population pop, int alpha, int size_file, Problem p) {
 		
 		double fitness[] = new double[pop.getSize()];
 		
-		/*- Classificação -*/
-		//determina a classificação de cada indivíduo da população
+		/*- Classificaï¿½ï¿½o -*/
+		//determina a classificaï¿½ï¿½o de cada indivï¿½duo da populaï¿½ï¿½o
 		pop.rankIndividuals(p);
 		
-		/*- Normalização -*/
-		//normaliza os valores de r(i) para o intervalo unitário e transforma para maximização
+		/*- Normalizaï¿½ï¿½o -*/
+		//normaliza os valores de r(i) para o intervalo unitï¿½rio e transforma para maximizaï¿½ï¿½o
 		double min_rank = pop.getRankI(pop.min(pop.getRank(), pop.getSize()));
 		double max_rank = pop.getRankI(pop.max(pop.getRank(), pop.getSize()));
 		double rank_max[] = new double[pop.getSize()];		
@@ -38,9 +38,9 @@ public class MOGAFitness extends MultiObjectiveFitness{
 			pop.setRank(i, (pop.getRankI(i) - min_rank) / (max_rank - min_rank));
 			rank_max[i] = 1 - pop.getRankI(i);
 		}
-		//escalonamento, se alpha = 1 - escalonamento linear -- ATÉ AQUI --
+		//escalonamento, se alpha = 1 - escalonamento linear -- ATï¿½ AQUI --
 		
-		//caso o escalonamento não seja linear (alpha > 1), normaliza os valores novamente
+		//caso o escalonamento nï¿½o seja linear (alpha > 1), normaliza os valores novamente
 		double delta[] = new double[pop.getSize()];
 		for(int i = 0; i < pop.getSize(); i++) {
 			delta[i] = Math.pow(rank_max[i], alpha); 
@@ -51,9 +51,9 @@ public class MOGAFitness extends MultiObjectiveFitness{
 			fitness[i] = delta[i] / max_delta;
 		}
 		
-		/*- Técnicas de Nicho -*/
+		/*- Tï¿½cnicas de Nicho -*/
 		//Uma forma de priorizar uma melhor distribuic~ao da populac~ao sobre a fronteira Pareto-otima
-		//A função de aptidão de cada indivíduo é degradada com base na função de partilha
+		//A funï¿½ï¿½o de aptidï¿½o de cada indivï¿½duo ï¿½ degradada com base na funï¿½ï¿½o de partilha
 		
 		//Normaliza Fx
 		double fx[][] = new double[pop.getSize()][p.getDimension()];
@@ -72,7 +72,7 @@ public class MOGAFitness extends MultiObjectiveFitness{
 	    	}
 	    }
 		
-		//Calcula a matriz de distância
+		//Calcula a matriz de distï¿½ncia
 		double sub[] = new double[p.getDimension()];
 		double distance[][] = new double[pop.getSize()][pop.getSize()];
 		for(int i = 0; i < pop.getSize(); i++) {
@@ -87,7 +87,7 @@ public class MOGAFitness extends MultiObjectiveFitness{
 			}
 		}
 		
-		//Calcula sigma_sh - raiz de m (maior diagonal do hipercubo) dividido por X (tamanho máximo do arquivo)
+		//Calcula sigma_sh - raiz de m (maior diagonal do hipercubo) dividido por X (tamanho mï¿½ximo do arquivo)
 		double sigma_sh;
 		sigma_sh = (Math.sqrt(p.getDimension())/size_file);
 		
@@ -115,7 +115,7 @@ public class MOGAFitness extends MultiObjectiveFitness{
 			}
 		}
 		
-		//Função de Aptidão degradada
+		//Funï¿½ï¿½o de Aptidï¿½o degradada
 		for(int i = 0; i < pop.getSize(); i++) {
 			pop.getSolutionInPopulation(i).setFitnessFunction(fitness[i] / sh[i]);
 		}
@@ -124,8 +124,8 @@ public class MOGAFitness extends MultiObjectiveFitness{
 	}
 	
 	public Population updateFileMOGA(Population pop, Population file, int size_file_max, int receiver_size, Problem p) {
-	    //une a população corrente com o arquivo já existente para idenficar 
-		//os pontos de pareto da população corrente
+	    //une a populaï¿½ï¿½o corrente com o arquivo jï¿½ existente para idenficar 
+		//os pontos de pareto da populaï¿½ï¿½o corrente
 		int total_size = pop.getSize() + file.getSize();
 		Population currente_file = new Population(total_size, size_file_max, receiver_size, p);
 		
@@ -139,12 +139,12 @@ public class MOGAFitness extends MultiObjectiveFitness{
 		}
 		//currente_file.showPopulation(p);
 		
-		//identifica o pareto da população corrente
+		//identifica o pareto da populaï¿½ï¿½o corrente
 		currente_file = currente_file.identifyPareto(receiver_size, p);
 		
-		//verifica o tamanho do arquivo para possível redução
+		//verifica o tamanho do arquivo para possï¿½vel reduï¿½ï¿½o
 		if(currente_file.getSize() > size_file_max) {
-			//reduz o arquivo ao tamanho máximo
+			//reduz o arquivo ao tamanho mï¿½ximo
 			currente_file = this.reduceFileMOGA(currente_file, size_file_max, receiver_size, p);
 		}
 		
@@ -179,7 +179,7 @@ public class MOGAFitness extends MultiObjectiveFitness{
 		    	}
 		    }
 			
-			//Calcula a matriz de distância
+			//Calcula a matriz de distï¿½ncia
 			double sub[] = new double[p.getDimension()];
 			double distance[][] = new double[current_size][current_size];
 			for(int i = 0; i < current_size; i++) {
@@ -205,7 +205,7 @@ public class MOGAFitness extends MultiObjectiveFitness{
 				}
 			}
 			
-			//Elimina o indivíduo com pior c
+			//Elimina o indivï¿½duo com pior c
 			int pos_larger = file.max(c, current_size);
 			aux.eliminatesIndividualI(pos_larger, p);
 			

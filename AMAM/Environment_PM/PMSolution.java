@@ -4,7 +4,7 @@ package Environment_PM;
  * 
  * Copyright (C) 2013-2018 Silva, M.A.L.
  * Function: Specialized class for the Solution of the Parallel Machines Problem  
- * @author Maria Amélia Lopes Silva <mamelia@ufv.br>
+ * @author Maria  Lopes Silva <mamelia@ufv.br>
  **/
 
 import java.io.IOException;
@@ -39,7 +39,7 @@ public class PMSolution extends Solution{
 		
 	/* OVERRIDE METHODS */
 	@Override
-	/* Description: o valor da função objetivo é o tempo da máquina que conclui as tarefas
+	/* Description: o valor da funï¿½ï¿½o objetivo ï¿½ o tempo da mï¿½quina que conclui as tarefas
 	 * em maior tempo
 	 */
 	public void calculateObjectiveFunction(Problem p) {
@@ -158,7 +158,7 @@ public class PMSolution extends Solution{
 		}
 	}
 
-	//Insere no final da lista de tarefas da máquina
+	//Insere no final da lista de tarefas da mï¿½quina
 	public void insertTaskInSolutionInLast(int task, int machine, Problem p) {
 		
 		PMProblem pm = null;

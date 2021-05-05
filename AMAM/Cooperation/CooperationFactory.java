@@ -8,7 +8,7 @@ import Parameters.ExperimentParameters;
  * 
  * Copyright (C) 2013-2018 Silva, M.A.L.
  * Function: class responsible for the creation (instantiation) of cooperation.
- * @author Maria Amélia Lopes Silva <mamelia@ufv.br>
+ * @author Maria  Lopes Silva <mamelia@ufv.br>
  **/
 
 public class CooperationFactory {
@@ -29,7 +29,7 @@ public class CooperationFactory {
 				break;
 			*/
 			default:
-				System.out.println("Tipo de problema não disponível!");
+				System.out.println("Tipo de problema nï¿½o disponï¿½vel!");
 		}
 		
 		return cooperation;

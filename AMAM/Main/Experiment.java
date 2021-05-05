@@ -11,7 +11,7 @@ import Parameters.Parameters;
  * 
  * Copyright (C) 2013-2018 Silva, M.A.L.
  * Function: Class that defines a Experiment.  
- * @author Maria Amélia Lopes Silva <mamelia@ufv.br>
+ * @author Maria  Lopes Silva <mamelia@ufv.br>
  **/
 
 public class Experiment {

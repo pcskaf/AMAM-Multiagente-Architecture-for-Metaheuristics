@@ -11,7 +11,7 @@ import Methods.Method;
  * Copyright (C) 2013-2018 Silva, M.A.L.
  * Function: Class that defines the structure of a basic Genetic Algorithm. Defined at run time by 
  * Design Pattern Builder.
- * @author Maria Amélia Lopes Silva <mamelia@ufv.br>
+ * @author Maria  Lopes Silva <mamelia@ufv.br>
  **/
 
 public class GeneticAlgorithm extends Method{

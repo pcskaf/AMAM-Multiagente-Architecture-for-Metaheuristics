@@ -14,7 +14,7 @@ import Parameters.Parameters;
  * 
  * Copyright (C) 2013-2018 Silva, M.A.L.
  * Function: Class that implements the BestNeighbor Class.  
- * @author Maria Amélia Lopes Silva <mamelia@ufv.br>
+ * @author Maria  Lopes Silva <mamelia@ufv.br>
  **/
 
 public class VRPBestNeighborCompleteDescent implements BestNeighbor{
@@ -77,7 +77,7 @@ public class VRPBestNeighborCompleteDescent implements BestNeighbor{
 			case "eliminate_small":
 				this.bestNeighborEliminateSmallRoute(k, movement_neighborhood, criteria, parameters, e, p);
 				/*if(this.best_neighbor.getNumberRoutes() < this.s_line.getNumberRoutes()) {
-					System.out.println("\nDIMINUIU O NÚMERO DE ROTAS!");
+					System.out.println("\nDIMINUIU O Nï¿½MERO DE ROTAS!");
 					this.element.setCount(this.element.getCount()+1);
 					System.out.println("\nCount: " + this.element.getCount());
 				}*/
@@ -85,7 +85,7 @@ public class VRPBestNeighborCompleteDescent implements BestNeighbor{
 			case "eliminate_random":
 				this.bestNeighborEliminateSmallRoute(k, movement_neighborhood, criteria, parameters, e, p);
 				/*if(this.best_neighbor.getNumberRoutes() < this.s_line.getNumberRoutes()) {
-					System.out.println("\nDIMINUIU O NÚMERO DE ROTAS!");
+					System.out.println("\nDIMINUIU O Nï¿½MERO DE ROTAS!");
 					this.element.setCount(this.element.getCount()+1);
 					System.out.println("\nCount: " + this.element.getCount());
 				}*/
@@ -111,7 +111,7 @@ public class VRPBestNeighborCompleteDescent implements BestNeighbor{
 						this.element.setRoute2(k);
 						this.element.setPositionClient2(l);
 					
-						//implementa o movimento de acordo com a vizinhança "neighborhood"
+						//implementa o movimento de acordo com a vizinhanï¿½a "neighborhood"
 						this.s_line.copyValuesSolution(movement_neighborhood.moveNeighborhood(neighborhood, 
 								this.s_line, parameters, element, p), p);
 						
@@ -121,7 +121,7 @@ public class VRPBestNeighborCompleteDescent implements BestNeighbor{
 							}	
 						}
 						else {
-							//atribuir penalidade por solução não válida
+							//atribuir penalidade por soluï¿½ï¿½o nï¿½o vï¿½lida
 							this.s_line.setObjectiveFunctionI(0, 2*this.s_line.getObjectiveFunctionI(0));
 						}
 						
@@ -156,7 +156,7 @@ public class VRPBestNeighborCompleteDescent implements BestNeighbor{
 						this.element.setRoute2(i);
 						this.element.setPositionClient2(l);
 				
-						//implementa o movimento de acordo com a vizinhança "neighborhood"
+						//implementa o movimento de acordo com a vizinhanï¿½a "neighborhood"
 						this.s_line.copyValuesSolution(movement_neighborhood.moveNeighborhood(neighborhood, 
 								this.s_line, parameters, element, p), p);
 							
@@ -166,7 +166,7 @@ public class VRPBestNeighborCompleteDescent implements BestNeighbor{
 							}
 						}
 						else {
-							//atribuir penalidade por solução não válida
+							//atribuir penalidade por soluï¿½ï¿½o nï¿½o vï¿½lida
 							this.s_line.setObjectiveFunctionI(0, 2*this.s_line.getObjectiveFunctionI(0));
 						}
 						
@@ -201,7 +201,7 @@ public class VRPBestNeighborCompleteDescent implements BestNeighbor{
 						this.element.setRoute2(k);
 						this.element.setPositionClient2(l);
 					
-						//implementa o movimento de acordo com a vizinhança "neighborhood"
+						//implementa o movimento de acordo com a vizinhanï¿½a "neighborhood"
 						this.s_line.copyValuesSolution(movement_neighborhood.moveNeighborhood(neighborhood, 
 								this.s_line, parameters, element, p), p);
 						
@@ -211,7 +211,7 @@ public class VRPBestNeighborCompleteDescent implements BestNeighbor{
 							}
 						}
 						else {
-							//atribuir penalidade por solução não válida
+							//atribuir penalidade por soluï¿½ï¿½o nï¿½o vï¿½lida
 							this.s_line.setObjectiveFunctionI(0, 2*this.s_line.getObjectiveFunctionI(0));
 						}
 						
@@ -246,7 +246,7 @@ public class VRPBestNeighborCompleteDescent implements BestNeighbor{
 						this.element.setRoute2(i);
 						this.element.setPositionClient2(l);
 				
-						//implementa o movimento de acordo com a vizinhança "neighborhood"
+						//implementa o movimento de acordo com a vizinhanï¿½a "neighborhood"
 						this.s_line.copyValuesSolution(movement_neighborhood.moveNeighborhood(neighborhood, 
 								this.s_line, parameters, element, p), p);
 							
@@ -256,7 +256,7 @@ public class VRPBestNeighborCompleteDescent implements BestNeighbor{
 							}
 						}
 						else {
-							//atribuir penalidade por solução não válida
+							//atribuir penalidade por soluï¿½ï¿½o nï¿½o vï¿½lida
 							this.s_line.setObjectiveFunctionI(0, 2*this.s_line.getObjectiveFunctionI(0));
 						}
 						

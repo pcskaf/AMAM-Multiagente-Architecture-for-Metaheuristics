@@ -4,7 +4,7 @@ package Environment_VRP;
  * 
  * Copyright (C) 2013-2018 Silva, M.A.L.
  * Function: Component of Vehicle Routing Problem  
- * @author Maria Amélia Lopes Silva <mamelia@ufv.br>
+ * @author Maria  Lopes Silva <mamelia@ufv.br>
  **/
 
 import java.util.StringTokenizer;

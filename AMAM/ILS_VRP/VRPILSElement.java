@@ -6,7 +6,7 @@ import Environment.Element;
  * 
  * Copyright (C) 2013-2018 Silva, M.A.L.
  * Function: Class that implements the Element Class.  
- * @author Maria Amélia Lopes Silva <mamelia@ufv.br>
+ * @author Maria  Lopes Silva <mamelia@ufv.br>
  **/
 
 public class VRPILSElement extends Element{

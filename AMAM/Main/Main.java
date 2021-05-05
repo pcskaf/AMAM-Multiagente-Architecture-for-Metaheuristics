@@ -2,12 +2,13 @@
 package Main;
 
 import java.text.SimpleDateFormat;
+import Experiment;
 
 /** AMAM - Multiagent architecture for metaheuristics
  * 
  * Copyright (C) 2013-2018 Silva, M.A.L.
  * Function: This class implement the 
- * @author Maria Amélia Lopes Silva <mamelia@ufv.br>
+ * @author Maria  Lopes Silva <mamelia@ufv.br>
  * 
  *  This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by

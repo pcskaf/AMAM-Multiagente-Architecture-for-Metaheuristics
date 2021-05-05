@@ -13,10 +13,10 @@ import Methods.Method;
  * Copyright (C) 2013-2018 Silva, M.A.L.
  * Function: Class that defines the structure of a basic Adaptive Local Search. Defined at run time by 
  * Design Pattern Builder.
- * @author Maria Amélia Lopes Silva <mamelia@ufv.br>
+ * @author Maria  Lopes Silva <mamelia@ufv.br>
  **/
 
-//Local Search and VND - em função de neighborhood_size
+//Local Search and VND - em funï¿½ï¿½o de neighborhood_size
 public class AdaptiveLocalSearch_QLearning_AfterTraining extends Method{
 
 	private AcceptationCriteria criteria;
@@ -68,14 +68,14 @@ public class AdaptiveLocalSearch_QLearning_AfterTraining extends Method{
 				count_k = 0;
 				better = true;
 				
-				//System.out.println("\nMelhorou a solução!");
+				//System.out.println("\nMelhorou a soluï¿½ï¿½o!");
 				//this.best_solution.showOFAndFitness(p);;
 				
 				//next neighborhood
 				k = this.getParameters().getMethodParametersI(id_agent-1).getQLearning().sequenceQMatrix(k, 0, better);
 			}
 			else {
-				//System.out.println("\nNão melhorou a solução!");
+				//System.out.println("\nNï¿½o melhorou a soluï¿½ï¿½o!");
 				
 				if(count_k == 0) {
 					//next neighborhood

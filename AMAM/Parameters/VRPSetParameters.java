@@ -11,7 +11,7 @@ import Environment.Problem;
  * 
  * Copyright (C) 2013-2018 Silva, M.A.L.
  * Function: Experiments parameters.  
- * @author Maria Amélia Lopes Silva <mamelia@ufv.br>
+ * @author Maria  Lopes Silva <mamelia@ufv.br>
  **/
 
 public class VRPSetParameters extends SetParameters{
@@ -33,7 +33,7 @@ public class VRPSetParameters extends SetParameters{
 		
 		
 		/*
-		//CRIA A LISTA DE MOVIMENTOS E ATRIBUI OS MOVIMENTOS DISPONÍVEIS
+		//CRIA A LISTA DE MOVIMENTOS E ATRIBUI OS MOVIMENTOS DISPONï¿½VEIS
 		parameters_vrp.setNeighborhoodSize(8);					 // -----NEIGHBORHOOD_SIZE-----
 		MovementList vrp_movement_list = new MovementList(parameters_vrp.getNeighborhoodSize());
 		

@@ -4,7 +4,7 @@ package Factorys;
  * 
  * Copyright (C) 2013-2018 Silva, M.A.L.
  * Function: class responsible for the creation (instantiation) of method builders 
- * @author Maria Amélia Lopes Silva <mamelia@ufv.br>
+ * @author Maria  Lopes Silva <mamelia@ufv.br>
  **/
 
 import Builder.ILSBuilder;
@@ -59,7 +59,7 @@ public class MethodBuilderFactory {
 								ls_builder = new VRPAdaptiveLocalSearchBuilder_OLD();
 								break;
 							default:
-								System.out.println("\nTipo de Busca Local não disponível!");
+								System.out.println("\nTipo de Busca Local nï¿½o disponï¿½vel!");
 								break;
 						}
 						ls_builder.setFunctionType(parameters.getLsType());
@@ -73,7 +73,7 @@ public class MethodBuilderFactory {
 								vrp_ils_builder.getIls().setCondition(new VRPILSStopConditionTime());
 								break;
 							default:
-								System.out.println("\nTipo de Condição de Parada não disponível!");
+								System.out.println("\nTipo de Condiï¿½ï¿½o de Parada nï¿½o disponï¿½vel!");
 								break;
 						}
 						
@@ -91,7 +91,7 @@ public class MethodBuilderFactory {
 			case "pmp":
 				break;		
 			default:
-				System.out.println("Tipo de Construtor de método não disponível!");
+				System.out.println("Tipo de Construtor de mï¿½todo nï¿½o disponï¿½vel!");
 		}
 		
 		return builder;

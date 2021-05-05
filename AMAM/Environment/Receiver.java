@@ -4,7 +4,7 @@ package Environment;
  * 
  * Copyright (C) 2013-2018 Silva, M.A.L.
  * Function: Class that keeps the agents that received the solution of the pool. 
- * @author Maria Amélia Lopes Silva <mamelia@ufv.br>
+ * @author Maria  Lopes Silva <mamelia@ufv.br>
  **/
 
 public class Receiver {
@@ -12,7 +12,7 @@ public class Receiver {
 	/* ATTRIBUTES */
 	private int id_receiver[];
 	private long time_receiver[];
-	private int max_size; //número máximo de receivers a serem armazenados
+	private int max_size; //nï¿½mero mï¿½ximo de receivers a serem armazenados
 	private int size;
 	
 	public Receiver(int max_size){

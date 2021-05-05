@@ -10,7 +10,7 @@ import Parameters.Parameters;
  * 
  * Copyright (C) 2013-2018 Silva, M.A.L.
  * Function: Class responsible for creating (instantiating) an element of a specific problem from input parameters  
- * @author Maria Amélia Lopes Silva <mamelia@ufv.br>
+ * @author Maria  Lopes Silva <mamelia@ufv.br>
  **/
 
 
@@ -32,10 +32,10 @@ public class ElementFactory {
 						if(e instanceof VRPILSElement) {
 							vrp_ils_e = (VRPILSElement) e;
 						}
-						//inicialização
+						//inicializaï¿½ï¿½o
 						vrp_ils_e.setIterationsNumber(0);
 						vrp_ils_e.setLevelPerturb(1);
-						//parâmetros
+						//parï¿½metros
 						vrp_ils_e.setMaxIterations(parameters.getMethodParametersI(i).getMaxIterations());   
 						vrp_ils_e.setMaxLevelPerturb(parameters.getMethodParametersI(i).getMaxLevelsPerturbation());
 						vrp_ils_e.setMaxTime(parameters.getMethodParametersI(i).getMaxTime());
@@ -53,7 +53,7 @@ public class ElementFactory {
 				break;
 				
 			default:
-				System.out.println("Tipo de solução não disponível!");
+				System.out.println("Tipo de soluï¿½ï¿½o nï¿½o disponï¿½vel!");
 		}
 		
 		return e;

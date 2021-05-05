@@ -5,7 +5,7 @@ package Environment_VRP;
  * 
  * Copyright (C) 2013-2018 Silva, M.A.L.
  * Function: Specialized class for the Solution of the Vehicle Routing Problem  
- * @author Maria Amélia Lopes Silva <mamelia@ufv.br>
+ * @author Maria  Lopes Silva <mamelia@ufv.br>
  **/
 
 import java.io.IOException;
@@ -38,7 +38,7 @@ public class VRPSolution extends Solution{
 		this.setNumberRoutes(0);
 		
 		this.solution_vector = new Route[vrp.getNumberOfClients()];
-		//nenhuma rota é inicializada aqui, só serão inicializadas quando necessário	
+		//nenhuma rota ï¿½ inicializada aqui, sï¿½ serï¿½o inicializadas quando necessï¿½rio	
 	}
 
 	
@@ -191,7 +191,7 @@ public class VRPSolution extends Solution{
 		}
 	}
 	
-	//Insere o cliente na posição pos e atualiza os valores necessários
+	//Insere o cliente na posiï¿½ï¿½o pos e atualiza os valores necessï¿½rios
 	public void insertionClientInSolution(int client, int route, int pos, VRPProblem p) {
 		int i;
 		double objective_function = this.getObjectiveFunctionI(0);
@@ -302,7 +302,7 @@ public class VRPSolution extends Solution{
 		}
 	}
 	
-	//verfica se uma rota tem ou não violação de janela de tempo
+	//verfica se uma rota tem ou nï¿½o violaï¿½ï¿½o de janela de tempo
 	public boolean violateTWRoute(int route, VRPProblem p) {
 		
 		int i;
@@ -425,7 +425,7 @@ public class VRPSolution extends Solution{
 		e.setRouteIns(route_small);
 	}
 	
-	//encontra posição para o cliente "cand", sem considerar a rota atual dele
+	//encontra posiï¿½ï¿½o para o cliente "cand", sem considerar a rota atual dele
 	public void testBetterPositionInOtherRoute(int cand, int current_route, VRPConstructElement e, VRPProblem p, int receiver_size) {
 		
 		double of_small = 100000; 
@@ -436,7 +436,7 @@ public class VRPSolution extends Solution{
 		
 		for(int i = 0; i < this.getNumberRoutes(); i++) {
 			
-			if(i != current_route) { //não considerar a rota atual do candidato
+			if(i != current_route) { //nï¿½o considerar a rota atual do candidato
 		
 				for(int j = 1; j <= (this.getRouteI(i).getNumberClientsRoute()+1); j++) {
 		
@@ -477,7 +477,7 @@ public class VRPSolution extends Solution{
 			
 			s_line.copyValuesSolution(this, p);
 			
-			if(i != current_route) { //não considerar a rota atual do candidato
+			if(i != current_route) { //nï¿½o considerar a rota atual do candidato
 		
 				for(int j = 1; j <= (this.getRouteI(i).getNumberClientsRoute()); j++) {
 			
@@ -564,7 +564,7 @@ public class VRPSolution extends Solution{
 		return true;
 	}
 	
-	//A single shift - (Realocação - Inter-rota)
+	//A single shift - (Realocaï¿½ï¿½o - Inter-rota)
 	public boolean shiftInter(int route1, int pos1, int route2, int pos2, VRPProblem p) {
 		
 		int client1;
@@ -601,7 +601,7 @@ public class VRPSolution extends Solution{
 		return true;
 	}
 
-	//Realocação - Intra-rota
+	//Realocaï¿½ï¿½o - Intra-rota
 	public boolean shiftIntra(int route1, int pos1, int pos2, VRPProblem p) {
 			
 		int client1;

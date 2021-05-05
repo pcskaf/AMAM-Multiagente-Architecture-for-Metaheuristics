@@ -4,7 +4,7 @@ package Environment;
  * 
  * Copyright (C) 2013-2018 Silva, M.A.L.
  * Function: Class that keeps the agents that sent the solution to the pool.  
- * @author Maria Amélia Lopes Silva <mamelia@ufv.br>
+ * @author Maria  Lopes Silva <mamelia@ufv.br>
  **/
 
 public class Sender {

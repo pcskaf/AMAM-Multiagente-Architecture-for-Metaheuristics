@@ -10,7 +10,7 @@ import Environment_VRP.VRPSolution;
  * 
  * Copyright (C) 2013-2018 Silva, M.A.L.
  * Function: Class that implements the InitializeSolution class.  
- * @author Maria Amélia Lopes Silva <mamelia@ufv.br>
+ * @author Maria  Lopes Silva <mamelia@ufv.br>
  **/
 
 public class VRPInitializeSolution implements InitializeSolution{

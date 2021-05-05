@@ -6,7 +6,7 @@ package Main;
  * Function: Class responsible for defining the structure of a thread in the framework. Every thread will 
  * have the reference of the main thread, to ensure that a next main thread is executed only if the previous 
  * main thread has been fully executed.  
- * @author Maria Amélia Lopes Silva <mamelia@ufv.br>
+ * @author Maria  Lopes Silva <mamelia@ufv.br>
  **/
 
 public class ThreadBase extends Thread{
@@ -15,7 +15,7 @@ public class ThreadBase extends Thread{
 	
     public ThreadBase(ExecutionMainThread handler) {
         super();
-        this.handler = handler; //cada thread tem uma referência da thread principal
+        this.handler = handler; //cada thread tem uma referï¿½ncia da thread principal
     }
 	
 }

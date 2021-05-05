@@ -10,7 +10,7 @@ import Methods.Method;
  * 
  * Copyright (C) 2013-2018 Silva, M.A.L.
  * Function: Solution pool class.
- * @author Maria Amélia Lopes Silva <mamelia@ufv.br>
+ * @author Maria  Lopes Silva <mamelia@ufv.br>
  **/
 
 public class PMPoolSolutions extends PoolSolutions{
@@ -60,9 +60,9 @@ public class PMPoolSolutions extends PoolSolutions{
 		{
 			for(int i = 0; i < pm_s1.getMachineI(k).getTasksNumber(); i++)
 			{
-				//System.out.println("\nMáquina " + k + " - pos " + i );
+				//System.out.println("\nMï¿½quina " + k + " - pos " + i );
 				//System.out.println("Arco s1 - " + s1.getTaskInMachines(k,i) + ", " + s1.getTaskInMachines(k,i+1));
-				//System.out.println("Máquina " + k + " - pos " + i );
+				//System.out.println("Mï¿½quina " + k + " - pos " + i );
 				//System.out.println("Arco s2 - " + s2.getTaskInMachines(k, i) + ", " + s2.getTaskInMachines(k, i+1));
 				if((k < pm_s2.getMachineNumber()) && (i < pm_s2.getMachineI(k).getTasksNumber())) {
 					if((pm_s1.getTaskInMachines(k, i) == pm_s2.getTaskInMachines(k, i)))
@@ -100,12 +100,12 @@ public class PMPoolSolutions extends PoolSolutions{
 		{
 			for(int i = 0; i < (pm_s1.getMachineI(k).getTasksNumber()-1); i++)
 			{
-				//AUMENTAR UM FOR PARA COMPARAR ARCO COM ARCO, E NÃO AVALIAR A ROTA COMO ESTÁ
-				//COLOCAR A COMPARAÇÃO I,J E J,I
+				//AUMENTAR UM FOR PARA COMPARAR ARCO COM ARCO, E Nï¿½O AVALIAR A ROTA COMO ESTï¿½
+				//COLOCAR A COMPARAï¿½ï¿½O I,J E J,I
 				
-				//System.out.println("\nMáquina " + k + " - pos " + i );
+				//System.out.println("\nMï¿½quina " + k + " - pos " + i );
 				//System.out.println("Arco s1 - " + s1.getTaskInMachines(k,i) + ", " + s1.getTaskInMachines(k,i+1));
-				//System.out.println("Máquina " + k + " - pos " + i );
+				//System.out.println("Mï¿½quina " + k + " - pos " + i );
 				//System.out.println("Arco s2 - " + s2.getTaskInMachines(k, i) + ", " + s2.getTaskInMachines(k, i+1));
 				if((k < pm_s2.getMachineNumber()) && (i < (pm_s2.getMachineI(k).getTasksNumber()-1))) {
 					if((pm_s1.getTaskInMachines(k, i) == pm_s2.getTaskInMachines(k, i)) && (pm_s1.getTaskInMachines(k, i+1) == pm_s2.getTaskInMachines(k, i+1)))

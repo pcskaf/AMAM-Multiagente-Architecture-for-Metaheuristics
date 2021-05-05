@@ -4,13 +4,13 @@ package Cooperation;
  * 
  * Copyright (C) 2013-2018 Silva, M.A.L.
  * Function: Class responsible for storing forms of cooperation between agents.  
- * @author Maria Amélia Lopes Silva <mamelia@ufv.br>
+ * @author Maria  Lopes Silva <mamelia@ufv.br>
  **/
 
 public class Cooperation {
 	
 	private PoolSolutions pool;
-	//e outras formas de comunicação
+	//e outras formas de comunicaï¿½ï¿½o
 
 	public PoolSolutions getPool() {
 		return pool;

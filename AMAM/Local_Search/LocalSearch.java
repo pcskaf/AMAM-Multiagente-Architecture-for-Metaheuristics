@@ -11,10 +11,10 @@ import Methods.Method;
  * Copyright (C) 2013-2018 Silva, M.A.L.
  * Function: Class that defines the structure of a basic Local Search. Defined at run time by 
  * Design Pattern Builder.
- * @author Maria Amélia Lopes Silva <mamelia@ufv.br>
+ * @author Maria  Lopes Silva <mamelia@ufv.br>
  **/
 
-//Local Search and VND - em função de neighborhood_size
+//Local Search and VND - em funï¿½ï¿½o de neighborhood_size
 public class LocalSearch extends Method{
 
 	private AcceptationCriteria criteria;
@@ -39,7 +39,7 @@ public class LocalSearch extends Method{
 		this.s.copyValuesSolution(so, p);
 		this.best_solution.copyValuesSolution(so, p);
 		
-		int k = 0; //na ordem das vizinhanças
+		int k = 0; //na ordem das vizinhanï¿½as
 		int no_improvement = 0;
 		
 		while ((k < this.neighborhood_size) && (improved)) {
@@ -56,7 +56,7 @@ public class LocalSearch extends Method{
 				no_improvement = 0;
 				k = 0;
 				
-				//System.out.println("\nMelhorou a solução!");
+				//System.out.println("\nMelhorou a soluï¿½ï¿½o!");
 				//this.best_solution.showOFAndFitness(p);;
 			}
 			else {
@@ -70,7 +70,7 @@ public class LocalSearch extends Method{
 				else {
 					improved = false;
 				}
-				//System.out.println("\nNão melhorou a solução!");
+				//System.out.println("\nNï¿½o melhorou a soluï¿½ï¿½o!");
 			}
 		}
 		

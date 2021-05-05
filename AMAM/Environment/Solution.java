@@ -4,7 +4,7 @@ package Environment;
  * 
  * Copyright (C) 2013-2018 Silva, M.A.L.
  * Function: Abstract class that defines the solution model for optimization problems.  
- * @author Maria Amélia Lopes Silva <mamelia@ufv.br>
+ * @author Maria  Lopes Silva <mamelia@ufv.br>
  **/
 
 import java.io.IOException;

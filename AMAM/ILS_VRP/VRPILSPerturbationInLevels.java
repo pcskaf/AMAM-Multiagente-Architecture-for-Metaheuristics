@@ -20,7 +20,7 @@ import Parameters.Parameters;
  * 
  * Copyright (C) 2013-2018 Silva, M.A.L.
  * Function: Class that implements the ILSPerturbation Class.  
- * @author Maria Amélia Lopes Silva <mamelia@ufv.br>
+ * @author Maria  Lopes Silva <mamelia@ufv.br>
  **/
 
 public class VRPILSPerturbationInLevels implements ILSPerturbation{
@@ -47,7 +47,7 @@ public class VRPILSPerturbationInLevels implements ILSPerturbation{
 		
 			switch (e_vrp.getLevelPerturb()) {
 				case 1: 
-					//deslocamento inter-máquina de duas tarefas aleatórias 
+					//deslocamento inter-mï¿½quina de duas tarefas aleatï¿½rias 
 					//sol_perturb.copyValuesSolution(this.perturbationTwoShiftInterRandom(sol_vrp, parameters, p), p);
 					sol_perturb.copyValuesSolution(this.perturbationTwoShiftInterRandom(sol_perturb, parameters, p), p);
 					break;
@@ -56,7 +56,7 @@ public class VRPILSPerturbationInLevels implements ILSPerturbation{
 					sol_perturb.copyValuesSolution(this.perturbationTwoSwapInterRandom(sol_perturb, parameters, p), p);
 					break;
 				case 3:
-					//deslocamento inter-máquina de três tarefas aleatórias
+					//deslocamento inter-mï¿½quina de trï¿½s tarefas aleatï¿½rias
 					//sol_perturb.copyValuesSolution(this.perturbationThreeShiftInterRandom(sol_vrp,parameters, p), p);
 					sol_perturb.copyValuesSolution(this.perturbationThreeShiftInterRandom(sol_perturb,parameters, p), p);
 					break;
@@ -72,13 +72,13 @@ public class VRPILSPerturbationInLevels implements ILSPerturbation{
 					//sol_perturb.copyValuesSolution(this.perturbationEliminatesSmallRoute(sol_vrp, parameters, p), p);
 					sol_perturb.copyValuesSolution(this.perturbationEliminatesSmallRoute(sol_perturb, parameters, p), p);
 					if(sol_vrp.getNumberRoutes() < sol_perturb.getNumberRoutes())
-						System.out.println("\nDIMINUIU O NÚMERO DE ROTAS!");
+						System.out.println("\nDIMINUIU O Nï¿½MERO DE ROTAS!");
 					break;
 				case 7:
 					//sol_perturb.copyValuesSolution(this.perturbationEliminatesRandomRoute(sol_vrp, parameters, p), p);
 					sol_perturb.copyValuesSolution(this.perturbationEliminatesRandomRoute(sol_perturb, parameters, p), p);
 					if(sol_vrp.getNumberRoutes() < sol_perturb.getNumberRoutes())
-						System.out.println("\nDIMINUIU O NÚMERO DE ROTAS!");
+						System.out.println("\nDIMINUIU O Nï¿½MERO DE ROTAS!");
 					break;
 				case 8:
 					long solution_time = System.currentTimeMillis() - parameters.getMethodParametersI(id_agent).getInitialTime();

@@ -10,28 +10,28 @@ import Reinforcement_Learning.QLearning;
  * 
  * Copyright (C) 2013-2018 Silva, M.A.L.
  * Function: Experiments parameters.  
- * @author Maria Amélia Lopes Silva <mamelia@ufv.br>
+ * @author Maria  Lopes Silva <mamelia@ufv.br>
  **/
 
 public class MethodParameters {
 
-	private Element element;      		//elementos específicos do problema
+	private Element element;      		//elementos especï¿½ficos do problema
 
 	//Metaheuristics
-	private String mth_type;      		//método implementada
-	private String stop_cond_type;     	//tipo de condição de parada do método
-	private String accept_crit_type;	//tipo de critério de aceitação do método
+	private String mth_type;      		//mï¿½todo implementada
+	private String stop_cond_type;     	//tipo de condiï¿½ï¿½o de parada do mï¿½todo
+	private String accept_crit_type;	//tipo de critï¿½rio de aceitaï¿½ï¿½o do mï¿½todo
 	private int max_iterations; 
 	private int max_levels_perturbation;
 	
 	//Construction
-	private String constr_type;   		//contrução utilizada pelo método
+	private String constr_type;   		//contruï¿½ï¿½o utilizada pelo mï¿½todo
 	private int rcl_size;				//tamanho da lista restrita de candidatos
 	private int portion_size;
 	
 	//LocalSearch
-	private String ls_type;       		//busca local utilizada pelo metódo
-	private int neighborhood_size; 		//número de 
+	private String ls_type;       		//busca local utilizada pelo metï¿½do
+	private int neighborhood_size; 		//nï¿½mero de 
 	private MovementList movement_list;
 
 	

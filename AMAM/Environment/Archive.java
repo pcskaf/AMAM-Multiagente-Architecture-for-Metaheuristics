@@ -4,7 +4,7 @@ package Environment;
  * 
  * Copyright (C) 2013-2018 Silva, M.A.L.
  * Function: Class responsible for defining solution archives.  
- * @author Maria Amélia Lopes Silva <mamelia@ufv.br>
+ * @author Maria  Lopes Silva <mamelia@ufv.br>
  **/
 
 public class Archive extends CollectionSolutions{

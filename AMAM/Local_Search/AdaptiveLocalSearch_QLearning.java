@@ -13,10 +13,10 @@ import Methods.Method;
  * Copyright (C) 2013-2018 Silva, M.A.L.
  * Function: Class that defines the structure of a basic Adaptive Local Search - based em Q-Learnig. 
  * Defined at run time by Design Pattern Builder.
- * @author Maria Amélia Lopes Silva <mamelia@ufv.br>
+ * @author Maria  Lopes Silva <mamelia@ufv.br>
  **/
 
-//Local Search and VND - em função de neighborhood_size
+//Local Search and VND - em funï¿½ï¿½o de neighborhood_size
 public class AdaptiveLocalSearch_QLearning extends Method{
 
 	private AcceptationCriteria criteria;
@@ -75,11 +75,11 @@ public class AdaptiveLocalSearch_QLearning extends Method{
 			
 			if(criteria.acceptationCriteria(this.s_line, this.best_solution,element, p)) {
 				this.best_solution.copyValuesSolution(this.s_line, p);
-				//System.out.println("Melhorou a solução!");
+				//System.out.println("Melhorou a soluï¿½ï¿½o!");
 				//this.s_line.showOFAndFitness(p);
 				
 				//Reinforcement Learning
-				if(p.getProblemType(0).equals("min")) { //testando para 1 dimensão
+				if(p.getProblemType(0).equals("min")) { //testando para 1 dimensï¿½o
 					this.s_line.minMaxFitnessWorstSolution(this.worst_solution, p);;
 					reward = this.s_line.getFitnessLearning();
 				}
@@ -90,7 +90,7 @@ public class AdaptiveLocalSearch_QLearning extends Method{
 			else {
 				states_count++;
 				states[next_state] = -1;
-				//System.out.println("Não melhorou a solução!");
+				//System.out.println("Nï¿½o melhorou a soluï¿½ï¿½o!");
 				//this.element.getBestCurrentSolution().showOFAndFitness(p);
 			}
 			
@@ -119,7 +119,7 @@ public class AdaptiveLocalSearch_QLearning extends Method{
 					no_improvement = 0;
 					
 					//Reinforcement Learning
-					if(p.getProblemType(0).equals("min")) { //testando para 1 dimensão
+					if(p.getProblemType(0).equals("min")) { //testando para 1 dimensï¿½o
 						this.s_line.minMaxFitnessWorstSolution(this.worst_solution, p);;
 						reward = reward + this.s_line.getFitnessLearning();
 						//System.out.println("\n\nReward: " + reward);
@@ -132,7 +132,7 @@ public class AdaptiveLocalSearch_QLearning extends Method{
 						this.getParameters().getMethodParametersI(id_agent).getQLearning().calculateQValue(state, next_state, reward); //updates the matrix q
 					}
 							
-					//System.out.println("Melhorou a solução!");
+					//System.out.println("Melhorou a soluï¿½ï¿½o!");
 					//this.s_line.showOFAndFitness(p);
 						
 				}
@@ -149,7 +149,7 @@ public class AdaptiveLocalSearch_QLearning extends Method{
 						improved = false;
 						episode = false;
 					}
-					//System.out.println("Não melhorou a solução!");
+					//System.out.println("Nï¿½o melhorou a soluï¿½ï¿½o!");
 					//this.element.getBestCurrentSolution().showOFAndFitness(p);
 				}
 				

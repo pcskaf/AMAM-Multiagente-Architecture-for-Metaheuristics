@@ -12,7 +12,7 @@ import Genetic_Algorithm.Population;
  * 
  * Copyright (C) 2013-2018 Silva, M.A.L.
  * Function: Elements of Reinforcement Learning.  
- * @author Maria Amélia Lopes Silva <mamelia@ufv.br>
+ * @author Maria  Lopes Silva <mamelia@ufv.br>
  **/
 
 public class QLearning {
@@ -35,7 +35,7 @@ public class QLearning {
 		q = new double[this.q_size][this.q_size];
 		this.epsilon = epsilon;
 		//initializeQNull(); //apenas para teste
-		initializeQSpecific(); //atribui valores a sequência i - i
+		initializeQSpecific(); //atribui valores a sequï¿½ncia i - i
 		//initializeQBestSolution();
 	}
 	
@@ -106,7 +106,7 @@ public class QLearning {
 			
 			double maxQ = maxActionQ(next_state);
 			
-			//r = ;//função fitness resultante da aplicação da estrutura do estado a qual a ação leva
+			//r = ;//funï¿½ï¿½o fitness resultante da aplicaï¿½ï¿½o da estrutura do estado a qual a aï¿½ï¿½o leva
 			
 			double value = q_value + this.alpha * (r + this.gamma * maxQ - q_value);
 			q[state][next_state] = value;
@@ -125,7 +125,7 @@ public class QLearning {
 			next_action = this.randomAction();
 		}
 		//else
-			//implementar outras formas de escolha da solução
+			//implementar outras formas de escolha da soluï¿½ï¿½o
 		
 		return next_action;
 	}
@@ -180,7 +180,7 @@ public class QLearning {
 				greater_q = this.q[current_action][i];
 				greater_action = i;
 			}
-			//se for igual escolhe uma aleatória
+			//se for igual escolhe uma aleatï¿½ria
 			if(this.q[current_action][i] == greater_q) {
 				double rand = generator.nextDouble();
 				if(rand <= 0.5) {

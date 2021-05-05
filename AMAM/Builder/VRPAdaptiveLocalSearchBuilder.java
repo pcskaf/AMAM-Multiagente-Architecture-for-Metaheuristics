@@ -16,7 +16,7 @@ import Parameters.Parameters;
  * 
  * Copyright (C) 2013-2018 Silva, M.A.L.
  * Function: Builder class for Adaptive Local Search Method for VRP. Implements Design Pattern Builder.  
- * @author Maria Amélia Lopes Silva <mamelia@ufv.br>
+ * @author Maria  Lopes Silva <mamelia@ufv.br>
  **/
 
 public class VRPAdaptiveLocalSearchBuilder extends MethodBuilder{
@@ -28,7 +28,7 @@ public class VRPAdaptiveLocalSearchBuilder extends MethodBuilder{
 		//AdaptiveLocalSearch_QLearning ls = new AdaptiveLocalSearch_QLearning();
 		AdaptiveLocalSearch_QLearning ls = new AdaptiveLocalSearch_QLearning();
 
-		//inicializa as soluções da busca local
+		//inicializa as soluï¿½ï¿½es da busca local
 		Solution s1 = new VRPSolution(parameters.getExperimentParameters().getReceiverSize(), p);
 		ls.setS(s1);
 		Solution s2 = new VRPSolution(parameters.getExperimentParameters().getReceiverSize(), p);
@@ -99,7 +99,7 @@ public class VRPAdaptiveLocalSearchBuilder extends MethodBuilder{
 				break; 
 			
 			default:
-				System.out.println("\nTipo de Busca Local não disponível!");
+				System.out.println("\nTipo de Busca Local nï¿½o disponï¿½vel!");
 				break;
 		}
 				

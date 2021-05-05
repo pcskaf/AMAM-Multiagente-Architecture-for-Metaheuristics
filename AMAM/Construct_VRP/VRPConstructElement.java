@@ -8,7 +8,7 @@ import Environment_VRP.VRPProblem;
  * 
  * Copyright (C) 2013-2018 Silva, M.A.L.
  * Function: Class that extends the Element class  
- * @author Maria Amélia Lopes Silva <mamelia@ufv.br>
+ * @author Maria  Lopes Silva <mamelia@ufv.br>
  **/
 
 public class VRPConstructElement extends Element{

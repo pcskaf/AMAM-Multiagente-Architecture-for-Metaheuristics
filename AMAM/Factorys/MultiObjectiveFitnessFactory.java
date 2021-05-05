@@ -4,7 +4,7 @@ package Factorys;
  * 
  * Copyright (C) 2013-2018 Silva, M.A.L.
  * Function:  
- * @author Maria Amélia Lopes Silva <mamelia@ufv.br>
+ * @author Maria  Lopes Silva <mamelia@ufv.br>
  **/
 
 import MultiObjective.MultiObjectiveFitness;
@@ -25,7 +25,7 @@ public class MultiObjectiveFitnessFactory {
 				//break;
 			
 			default:
-				System.out.println("Tipo de função não disponível!");
+				System.out.println("Tipo de funï¿½ï¿½o nï¿½o disponï¿½vel!");
 		}	
 		
 		return mo_fitness;

@@ -10,7 +10,7 @@ import Function_Package.StopCondition;
  * 
  * Copyright (C) 2013-2018 Silva, M.A.L.
  * Function: Class that implements the StopCondition Class.  
- * @author Maria Amélia Lopes Silva <mamelia@ufv.br>
+ * @author Maria  Lopes Silva <mamelia@ufv.br>
  **/
 
 public class VRPILSStopConditionTime implements StopCondition{

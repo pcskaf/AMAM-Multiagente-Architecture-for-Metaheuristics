@@ -7,7 +7,7 @@ import Environment.Solution;
  * 
  * Copyright (C) 2013-2018 Silva, M.A.L.
  * Function: Class that extends MultiObjectiveFitness Class.  
- * @author Maria Amélia Lopes Silva <mamelia@ufv.br>
+ * @author Maria  Lopes Silva <mamelia@ufv.br>
  **/
 
 public class NSGA2Fitness extends MultiObjectiveFitness{
@@ -20,7 +20,7 @@ public class NSGA2Fitness extends MultiObjectiveFitness{
 
 	public void evaluateFitnessNSGA2(Population pop, int alpha, int receiver_size, Problem p) {
 		
-		// - Classificação - 
+		// - Classificaï¿½ï¿½o - 
 		Population new_pop = new Population(pop.getSize(), pop.getMaxSize(), receiver_size, p);
 		new_pop.copyPopulation(pop, p);
 		Population boundary = new Population(pop.getSize(), pop.getMaxSize(), receiver_size, p);
@@ -36,7 +36,7 @@ public class NSGA2Fitness extends MultiObjectiveFitness{
 			pareto = new_pop.identifyParetoNSGA2(receiver_size, p);
 			
 			pareto_size = 0;
-			//atribui classificação à fronteira
+			//atribui classificaï¿½ï¿½o ï¿½ fronteira
 			for(int i = 0; i < new_pop.getSize(); i++) {
 				if(pareto[i] == 1) {
 					pareto_size++;
@@ -57,7 +57,7 @@ public class NSGA2Fitness extends MultiObjectiveFitness{
 			}
 			boundary.showFOPopulation(p);
 			
-			//atualizar a população
+			//atualizar a populaï¿½ï¿½o
 			int pos;
 			for(int i = 0; i < pareto_size; i++) {
 				pos = ind_pareto[i];
@@ -72,10 +72,10 @@ public class NSGA2Fitness extends MultiObjectiveFitness{
 			id_boundary++;
 		}
 		
-		// - Normalização - 
+		// - Normalizaï¿½ï¿½o - 
 		double rank[] = new double[boundary.getSize()];
 		rank = boundary.copyVectorFitness(boundary);
-		//Normaliza os valores de r(i) para o intervalo unitário e transformado para maximização
+		//Normaliza os valores de r(i) para o intervalo unitï¿½rio e transformado para maximizaï¿½ï¿½o
 	    double rank_min = rank[boundary.min(rank, boundary.getSize())];
 	    double rank_max = rank[boundary.max(rank, boundary.getSize())];
 	    double r_max[] = new double[boundary.getSize()];
@@ -90,7 +90,7 @@ public class NSGA2Fitness extends MultiObjectiveFitness{
 	    	delta[i] = Math.pow(r_max[i], alpha);
 	    }
 	    
-	    //caso o escalonamento não seja linear (alpha > 1), normaliza os valores novamente
+	    //caso o escalonamento nï¿½o seja linear (alpha > 1), normaliza os valores novamente
 	    double delta_max = delta[boundary.max(delta, boundary.getSize())];
 	    double fitness[] = new double[boundary.getSize()];
 	    for(int i = 0; i < boundary.getSize(); i++) {
@@ -100,8 +100,8 @@ public class NSGA2Fitness extends MultiObjectiveFitness{
 	}
 	
 	public Population updateFileNSGA2(Population pop, Population file, int size_file_max, int receiver_size, Problem p) {
-		//une a população corrente com o arquivo já existente para idenficar 
-		//os pontos de pareto da população corrente
+		//une a populaï¿½ï¿½o corrente com o arquivo jï¿½ existente para idenficar 
+		//os pontos de pareto da populaï¿½ï¿½o corrente
 		int total_size = pop.getSize() + file.getSize();
 		Population currente_file = new Population(total_size, size_file_max, receiver_size, p);
 		
@@ -115,12 +115,12 @@ public class NSGA2Fitness extends MultiObjectiveFitness{
 		}
 		currente_file.showPopulation(p);
 		
-		//identifica o pareto da população corrente
+		//identifica o pareto da populaï¿½ï¿½o corrente
 		currente_file = currente_file.identifyPareto(receiver_size, p);
 		
-		//verifica o tamanho do arquivo para possível redução
+		//verifica o tamanho do arquivo para possï¿½vel reduï¿½ï¿½o
 		if(currente_file.getSize() > size_file_max) {
-		//reduz o arquivo ao tamanho máximo
+		//reduz o arquivo ao tamanho mï¿½ximo
 			currente_file = this.reduceFileNSGA2(currente_file, size_file_max, receiver_size, p);
 		}
 		
@@ -137,7 +137,7 @@ public class NSGA2Fitness extends MultiObjectiveFitness{
 			int boundary[] = new int[pop.getSize()]; 
 			boundary = pop.identifyParetoNSGA2(receiver_size, p);
 			
-			//atribui classificação à fronteira
+			//atribui classificaï¿½ï¿½o ï¿½ fronteira
 			int pareto_size = 0;
 			for(int i = 0; i < new_pop.getSize(); i++) {
 				if(pareto[i] == 1) {
@@ -185,7 +185,7 @@ public class NSGA2Fitness extends MultiObjectiveFitness{
 		    	}
 		    }
 			
-			//Calcula a matriz de distância
+			//Calcula a matriz de distï¿½ncia
 			double sub[] = new double[p.getDimension()];
 			double distance[][] = new double[current_size][current_size];
 			for(int i = 0; i < current_size; i++) {

@@ -8,7 +8,7 @@ import ILS_VRP.VRPILSStopConditionAllThreads;
  * 
  * Copyright (C) 2013-2018 Silva, M.A.L.
  * Function:  
- * @author Maria Amélia Lopes Silva <mamelia@ufv.br>
+ * @author Maria  Lopes Silva <mamelia@ufv.br>
  **/
 
 public class StopConditionAllThreadsFactory {
@@ -24,7 +24,7 @@ public class StopConditionAllThreadsFactory {
 			case "pmp":
 				break;		
 			default:
-				System.out.println("Tipo de Construtor de método não disponível!");
+				System.out.println("Tipo de Construtor de mï¿½todo nï¿½o disponï¿½vel!");
 		}
 
 		return stopcondition_allthreads;

@@ -4,7 +4,7 @@ package Main;
  * 
  * Copyright (C) 2013-2018 Silva, M.A.L.
  * Function: Class that defines a Thread Agent Model.  
- * @author Maria Amélia Lopes Silva <mamelia@ufv.br>
+ * @author Maria  Lopes Silva <mamelia@ufv.br>
  **/
 
 public class ThreadAgentModel extends ThreadBase{
@@ -22,7 +22,7 @@ public class ThreadAgentModel extends ThreadBase{
 	
 	public void run() {
 		for(int i = 0; i < 100; i++){
-			System.out.println("Teste Thread " + this.id_execution + this.id_thread); //execução dos agentes da execução
+			System.out.println("Teste Thread " + this.id_execution + this.id_thread); //execuï¿½ï¿½o dos agentes da execuï¿½ï¿½o
 		}
 		System.out.println("Teste Thread "+ this.id_execution + this.id_thread + " Terminou!");
 		this.handler.notifyFinishThread();

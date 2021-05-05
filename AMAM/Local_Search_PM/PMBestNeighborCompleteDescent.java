@@ -15,7 +15,7 @@ import Parameters.Parameters;
  * 
  * Copyright (C) 2013-2018 Silva, M.A.L.
  * Function: Class that implements the BestNeighbor Class.  
- * @author Maria Amélia Lopes Silva <mamelia@ufv.br>
+ * @author Maria  Lopes Silva <mamelia@ufv.br>
  **/
 
 public class PMBestNeighborCompleteDescent implements BestNeighbor{
@@ -83,7 +83,7 @@ public class PMBestNeighborCompleteDescent implements BestNeighbor{
 								this.element.setMachine2(k);
 								this.element.setPositionTask2(l);
 							
-								//implementa o movimento de acordo com a vizinhança "neighborhood"
+								//implementa o movimento de acordo com a vizinhanï¿½a "neighborhood"
 								this.s_line.copyValuesSolution(movement_neighborhood.moveNeighborhood(neighborhood, 
 										this.s_line, parameters, element, p), p);
 								
@@ -120,7 +120,7 @@ public class PMBestNeighborCompleteDescent implements BestNeighbor{
 						this.element.setMachine2(makespan_machine);
 						this.element.setPositionTask2(l);
 				
-						//implementa o movimento de acordo com a vizinhança "neighborhood"
+						//implementa o movimento de acordo com a vizinhanï¿½a "neighborhood"
 						this.s_line.copyValuesSolution(movement_neighborhood.moveNeighborhood(neighborhood, 
 								this.s_line, parameters, element, p), p);
 							
@@ -153,7 +153,7 @@ public class PMBestNeighborCompleteDescent implements BestNeighbor{
 						this.element.setMachine2(k);
 						this.element.setPositionTask2(l);
 					
-						//implementa o movimento de acordo com a vizinhança "neighborhood"
+						//implementa o movimento de acordo com a vizinhanï¿½a "neighborhood"
 						this.s_line.copyValuesSolution(movement_neighborhood.moveNeighborhood(neighborhood, 
 								this.s_line, parameters, element, p), p);
 						
@@ -188,7 +188,7 @@ public class PMBestNeighborCompleteDescent implements BestNeighbor{
 						this.element.setMachine2(makespan_machine);
 						this.element.setPositionTask2(l);
 				
-						//implementa o movimento de acordo com a vizinhança "neighborhood"
+						//implementa o movimento de acordo com a vizinhanï¿½a "neighborhood"
 						this.s_line.copyValuesSolution(movement_neighborhood.moveNeighborhood(neighborhood, 
 								this.s_line, parameters, element, p), p);
 							

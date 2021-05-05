@@ -17,7 +17,7 @@ import Reinforcement_Learning.ReinforcementLearning_Old;
  * 
  * Copyright (C) 2013-2018 Silva, M.A.L.
  * Function: Builder class for Adaptive Local Search Method for VRP. Implements Design Pattern Builder.  
- * @author Maria Amélia Lopes Silva <mamelia@ufv.br>
+ * @author Maria  Lopes Silva <mamelia@ufv.br>
  **/
 
 public class VRPAdaptiveLocalSearchBuilder_OLD extends MethodBuilder{
@@ -29,7 +29,7 @@ public class VRPAdaptiveLocalSearchBuilder_OLD extends MethodBuilder{
 		//AdaptiveLocalSearch_QLearning ls = new AdaptiveLocalSearch_QLearning();
 		LocalSearch_AdaptiveBRACIS2015 ls = new LocalSearch_AdaptiveBRACIS2015();
 
-		//inicializa as soluções da busca local
+		//inicializa as soluï¿½ï¿½es da busca local
 		Solution s1 = new VRPSolution(parameters.getExperimentParameters().getReceiverSize(), p);
 		ls.setS(s1);
 		Solution s2 = new VRPSolution(parameters.getExperimentParameters().getReceiverSize(), p);
@@ -84,7 +84,7 @@ public class VRPAdaptiveLocalSearchBuilder_OLD extends MethodBuilder{
 				ls.setElement(vrp_element);
 				break;
 			default:
-				System.out.println("\nTipo de Busca Local não disponível!");
+				System.out.println("\nTipo de Busca Local nï¿½o disponï¿½vel!");
 				break;
 		}
 				

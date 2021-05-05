@@ -14,10 +14,10 @@ import Reinforcement_Learning.ReinforcementLearning_Old;
  * Copyright (C) 2013-2018 Silva, M.A.L.
  * Function: Class that defines the structure of a Adaptive Local Search - specific to the publication 
  * in Bracis2015. Defined at run time by Design Pattern Builder.
- * @author Maria Amélia Lopes Silva <mamelia@ufv.br>
+ * @author Maria  Lopes Silva <mamelia@ufv.br>
  **/
 
-//Local Search and VND - em função de neighborhood_size
+//Local Search and VND - em funï¿½ï¿½o de neighborhood_size
 public class LocalSearch_AdaptiveBRACIS2015 extends Method{
 
 	private ReinforcementLearning_Old rl;
@@ -40,7 +40,7 @@ public class LocalSearch_AdaptiveBRACIS2015 extends Method{
 	public Solution runMethod(Problem p, Solution so, int id_agent) {
 		// TODO Auto-generated method stub
 		boolean improved = true;
-		int k = 0; //como está sendo usado um vetor para armazenar as vizinhanças, começa em 0
+		int k = 0; //como estï¿½ sendo usado um vetor para armazenar as vizinhanï¿½as, comeï¿½a em 0
 		Random generator = new Random();
 		
 		this.s.copyValuesSolution(so, p);

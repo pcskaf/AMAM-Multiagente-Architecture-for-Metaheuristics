@@ -17,7 +17,7 @@ import Parameters.Parameters;
  * 
  * Copyright (C) 2013-2018 Silva, M.A.L.
  * Function: Class that implements the ILSPerturbation Class. 
- * @author Maria Amélia Lopes Silva <mamelia@ufv.br>
+ * @author Maria  Lopes Silva <mamelia@ufv.br>
  **/
 
 public class PMILSPerturbationInLevels implements ILSPerturbation{
@@ -40,7 +40,7 @@ public class PMILSPerturbationInLevels implements ILSPerturbation{
 		
 		switch (e_pm.getLevelPerturb()) {
 			case 1: 
-				//deslocamento inter-máquina de duas tarefas aleatórias 
+				//deslocamento inter-mï¿½quina de duas tarefas aleatï¿½rias 
 				sol_perturb.copyValuesSolution(this.perturbationTwoShiftInterRandom(sol_pm, parameters, p), p);
 				break;
 			case 2: 
@@ -50,7 +50,7 @@ public class PMILSPerturbationInLevels implements ILSPerturbation{
 				sol_perturb.copyValuesSolution(this.perturbationThreeShiftInterConsecutive(sol_pm, parameters, p), p);
 				break;
 			//case 4:
-				//n tarefas em sequência - por enquanto 3
+				//n tarefas em sequï¿½ncia - por enquanto 3
 				//sol_perturb.copyValuesSolution(this.perturbationTwoSwapInterRandom(sol_pm, parameters, p), p);
 				//break;
 			default:
